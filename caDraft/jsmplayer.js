@@ -112,8 +112,8 @@ progressContainer.addEventListener('click', setProgress);
 // Song ends
 audio.addEventListener('ended', nextSong);
 
-// Change volume
+/* Change volume
 function volume_change(){
   volume_show.innerHTML = recent_volume.;
   .recent_volume. / 100;
-}
+}*/
