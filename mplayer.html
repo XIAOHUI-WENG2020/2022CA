@@ -31,20 +31,20 @@
         <button id="prev" class="action-btn">
           <i class="fas fa-backward"></i>
         </button>
-        <button id="play" class="action-btn action-btn-big">
-          <i class="fas fa-play"></i>
-        </button>
-        <button id="next" class="action-btn">
-          <i class="fas fa-forward"></i>
-        </button>
-        <div class="volume">
-          <p id="volume_show">90</p>
+        <!-- <div class="volume">
+          <p id="volume_show"></p>
           <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon" onclick="mute_sound()"></i>
           <input type="range" min="0" max="100" volume="90" onchange="volume_change()" id="volume">
-        </div>
+        </div> -->
+        <div class="controls">
+          <div class="amplitude-play-pause"></div>
+          <div class="amplitude-stop"></div>
+          <div class="amplitude-mute"></div>
+          <input type="range" class="amplitude-volume-slider" />
+      </div>
       </div>
     </div>
-
+    <script src="./node_modules/amplitudejs/dist/amplitude.js"></script>
     <script src="jsmplayer.js"></script>
   </body>
 </html>
